@@ -72,6 +72,12 @@ server {
 
 ```
 
+* hooks访问URL会是这样的：`http://gitlab.server.com/checkout/gitlab-php-webhooks`，将它和上面产生的token一同填入gitlab项目配置，然后尝试一下吧~
+
+* 在服务端tailf日志文件，可以观察到有类似的日志输出则是成功拉取代码啦，如果没有日志文件产生，或者`git log`发现也没有更新代码，那么多半是权限问题了
+
+![](./images/14975132155185.jpg)
+
 [1]: https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90
 [2]: https://github.com/CsHeng/gitlab-php-webhooks
 
